@@ -1,21 +1,127 @@
 @charset "UTF-8";
 
+/* GLOBAL */
+body{
+	font-family: "Open Sans", sans-serif;
+}
+h1{
+	font-family: "Oswald", sans-serif;
+}
+
 header { 
 	font-family: "Oswald", sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 	margin-top: 20px;
 	
  }
 
- header li {
+ header li{
 	display: inline;
-	padding: 0 20px 0 20px;
-	color: black;
+	padding: 0 40px 0 20px;
+	
 } 
+.headerlink {
+	color: black;
+}
+
+.headerlink:hover {
+	color: #F5B12C;
+	text-decoration: none;
+}
 
 #homeButton{
-	width: 44px;
-	height: 90px;
-	left: 61px;
-	top: 47px;;
+	width: 40px;
+	height: 82px;
+}
+
+.wrap {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+/* HOME PAGE */
+#hometagline{
+	font-size: 120px;
+	color: black;
+	margin-top: 120px;
+	margin-left: 40px;
+
+}
+
+#vectorportrait{
+	float: right;
+	margin-top: 10px;
+	width: 600px;
+	height: 589px;
+	margin-left: 50px;
+}
+
+.blinking-cursor {
+	font-weight: lighter;
+  	font-size: 120px;
+  	color: #2E3D48;
+  	display: inline;
+  	-webkit-animation: 1.5s blink step-end infinite;
+  	-moz-animation: 1.5s blink step-end infinite;
+  	-ms-animation: 1.5s blink step-end infinite;
+  	-o-animation: 1.5s blink step-end infinite;
+  	animation: 1.5s blink step-end infinite;
+}
+
+/* CURSOR ANIMATION */
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+/* FOOTER */
+
+footer {
+	padding:5px;
+  	margin-left: 40px;
+  	font-size: 14px;
+  	color: black;
+  	background-color: white;
+  	text-align: left;
+  	min-height: 20px;
 }
