@@ -65,9 +65,9 @@ header {
 .rectangle {
   	height: 40px;
   	width: 100%;
- 	 background-color: #FFEDCA;
+ 	background-color: #FFEDCA;
   	position: absolute;
-  	top: 300px;
+  	top: 45%;
   	z-index: -1;
  }
 
