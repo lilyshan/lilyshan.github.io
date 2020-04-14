@@ -13,7 +13,7 @@ h3{
 
 header { 
 	font-family: "Oswald", sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	margin-top: 20px;
  }
 
@@ -30,6 +30,10 @@ header {
 .headerlink:hover {
 	color: #F5B12C;
 	text-decoration: none;
+}
+
+#yellow.headerlink {
+	color: #F5B12C;
 }
 
 #homeButton{
@@ -149,18 +153,34 @@ header {
   }
 }
 
+/* PROJECTS PAGE */
+
 /* ABOUT ME PAGE */
 
 .single-item{
 	margin-left: 5%;
 	height: 565px;
 	width: 424px;
-	margin-bottom: 10px;
 }
 
 .about-content{
+	font-family: "Open Sans", sans-serif;
 	float: right;
-	margin-left: 2%;
+	margin-left: 4%;
+	width: 50%;
+	line-height: 160%
+}
+
+#linkedin-logo{
+	width: 40px;
+	height: 37px;
+}
+
+#email-logo{
+	width: 40px;
+	height: 33px;
+	margin-right: 4%;
+	margin-top: 1%;
 }
 
 /* FOOTER */
