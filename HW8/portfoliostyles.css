@@ -7,6 +7,9 @@ body{
 h1{
 	font-family: "Oswald", sans-serif;
 }
+h3{
+	font-family: "Open Sans", sans-serif;
+}
 
 header { 
 	font-family: "Oswald", sans-serif;
@@ -71,6 +74,12 @@ header {
 	height: 589px;
 	margin-left: 50px;
 	z-index: 1;
+}
+
+#homepage-subtitle{
+	font-size: 16px;
+	margin-left: 40px;
+	margin-top: 5%;
 }
 
 .rectangle {
@@ -140,6 +149,20 @@ header {
   }
 }
 
+/* ABOUT ME PAGE */
+
+.single-item{
+	margin-left: 5%;
+	height: 565px;
+	width: 424px;
+	margin-bottom: 10px;
+}
+
+.about-content{
+	float: right;
+	margin-left: 2%;
+}
+
 /* FOOTER */
 
 footer {
@@ -150,4 +173,8 @@ footer {
   	background-color: white;
   	text-align: left;
   	min-height: 20px;
+}
+
+footer.center-align{
+	text-align: center;
 }
