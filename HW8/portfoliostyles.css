@@ -38,6 +38,18 @@ header {
 	text-decoration: none;
 }
 
+.pagetitle {
+	float: left;
+	margin-top: 15%;
+	transform: rotate(-180deg);
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	font-size: 72px;
+	padding: 0;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
 .wrap {
 	flex-wrap: wrap;
 	display: flex;
