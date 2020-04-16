@@ -188,13 +188,14 @@ header {
 	font-family: "Open Sans", sans-serif;
 	float: right;
 	margin-left: 4%;
-	width: 50%;
+	width: 590px;
 	line-height: 160%
 }
 
 #linkedin-logo{
 	width: 40px;
 	height: 37px;
+	margin-bottom: 1%;
 }
 
 #email-logo{
@@ -202,11 +203,13 @@ header {
 	height: 33px;
 	margin-right: 4%;
 	margin-top: 1%;
+	margin-bottom: 1%;
+
 }
 
 /*Slideshow*/
 .single-item{
-	margin-left: 5%;
+	margin-left: 2%;
 	height: 565px;
 	width: 424px;
 }
