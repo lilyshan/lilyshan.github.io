@@ -4,9 +4,11 @@
 body{
 	font-family: "Open Sans", sans-serif;
 }
+
 h1{
 	font-family: "Oswald", sans-serif;
 }
+
 h3{
 	font-family: "Open Sans", sans-serif;
 }
@@ -20,7 +22,6 @@ header {
  header li{
 	display: inline;
 	padding: 0 3% 0 2%;
-	/*width: 100px;*/
 	
 } 
 .headerlink {
@@ -155,15 +156,34 @@ header {
 
 /* PROJECTS PAGE */
 
-/* ABOUT ME PAGE */
-
-/*Slideshow*/
-.single-item{
-	margin-left: 5%;
-	height: 565px;
-	width: 424px;
+.image-wrap{
+	margin-right: 40px;
+	margin-bottom: 10px;
 }
 
+.imagecover-sizing{
+	width: 284px;
+	height: 284px;
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+}
+
+.project-title{
+	text-align: center;
+	width: 284px;
+	font-size: 16px;
+}
+
+#waterlily{
+	float: right;
+	width: 25%;
+	height: 25%;
+	margin-top: 10%;
+	margin-left: 10%;
+}
+
+/* ABOUT ME PAGE */
 .about-content{
 	font-family: "Open Sans", sans-serif;
 	float: right;
@@ -184,6 +204,13 @@ header {
 	margin-top: 1%;
 }
 
+/*Slideshow*/
+.single-item{
+	margin-left: 5%;
+	height: 565px;
+	width: 424px;
+}
+
 /* FOOTER */
 
 footer {
@@ -199,3 +226,11 @@ footer {
 footer.center-align{
 	text-align: center;
 }
+
+
+
+
+
+
+
+
