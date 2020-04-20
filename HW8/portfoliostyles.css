@@ -9,8 +9,19 @@ h1{
 	font-family: "Oswald", sans-serif;
 }
 
+h2{
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	margin-top: 3%;
+}
+
 h3{
 	font-family: "Open Sans", sans-serif;
+}
+
+p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
 }
 
 header { 
@@ -48,14 +59,15 @@ header {
 
 .pagetitle {
 	float: left;
-	margin-top: 15%;
+	margin-top: 10%;
 	transform: rotate(-180deg);
 	writing-mode: vertical-rl;
 	text-orientation: sideways;
+	text-align: right;
 	font-size: 72px;
 	padding: 0;
 	margin-left: 0px;
-	margin-bottom: 0px;
+	height: 100%;
 }
 
 .wrap {
@@ -184,6 +196,7 @@ header {
 }
 
 /* ABOUT ME PAGE */
+
 .about-content{
 	font-family: "Open Sans", sans-serif;
 	float: right;
@@ -213,6 +226,45 @@ header {
 	width: 424px;
 }
 
+/* IxDS II Trekko Page*/
+
+.project-title-page{
+	text-align: left;
+	font-size: 50px;
+	padding: 0;
+	margin-left: 12%;
+	font-style: 
+}
+
+.project-content{
+	position: relative;
+	margin-left: 12%;
+	width: 75%;
+}
+
+.project-video{
+	margin-top: 2%;
+	padding: 0;
+	margin-left:12%;
+	outline: none;
+}
+
+.note {
+	margin-top: 15px;
+}
+
+/* IxDS II Markel Page*/
+.right-side {
+	width: 60%;
+	height: 100%;
+}
+
+.left-side {
+	width: 40%;
+	height: 100%;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -222,7 +274,8 @@ footer {
   	color: black;
   	background-color: white;
   	text-align: left;
-  	min-height: 20px;
+  	/*min-height: 20px;*/
+  	margin-top: 2%;
 }
 
 footer.center-align{
