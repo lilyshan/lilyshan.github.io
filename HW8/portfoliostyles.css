@@ -258,6 +258,11 @@ header {
 	height: 275px;
 }
 
+#wheelchair-storyboard{
+	width: 500px;
+	height: 386px;
+}
+
 /* IxDS II Markel Page*/
 .right-side {
 	width: 60%;
@@ -301,6 +306,24 @@ header {
 	height: 600px;
 	margin-bottom: 1%;
 	margin-left: 2%;
+}
+
+/* IxDS I Atlantis Hub Page*/
+#current-state-photo{
+	width: 245px;
+	height: 300px;
+}
+
+.atlantishub-photo{
+	width: 338px;
+	height: 600px;
+	margin-bottom: 1%;
+	margin-left: 2%;
+}
+
+#button-photo{
+	width: 400px;
+	height: 283px;
 }
 
 /* FOOTER */
