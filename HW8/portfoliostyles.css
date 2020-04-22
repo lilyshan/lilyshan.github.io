@@ -363,6 +363,57 @@ header {
 	height: 399px;
 }
 
+/* Misc. Projects Page*/
+.misc-project-title{
+	margin-left: 11%;
+}
+
+#night-beach-art{
+	width: 400px;
+	height: 528px;
+	margin-left: 11%;
+	margin-top: 2%;
+}
+
+.misc-caption{
+	margin-top: 2%;
+	margin-left: 4%;
+}
+/* Indent for first photo*/
+.indent1{
+	margin-left: 11%;
+}
+/* Indent for later photos*/
+.indent2{
+	margin-left: 2%;
+}
+
+.fashion-poster{
+	width: 300px;
+	height: 478px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+}
+
+.gestalt-series{
+	width: 600px;
+	height: 388px;
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+}
+
+.gestalt-sizing{
+	width: 600px;
+	height: 388px;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+
 /* FOOTER */
 
 footer {
