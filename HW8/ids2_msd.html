@@ -27,20 +27,43 @@
 	</header>
 
 	<section>
-        <h1 class = "project-title-page">IxDS II - Markel Maintenance</h1>
+        <h1 class = "project-title-page">IxDS II - Markel Maintenance App</h1>
         <!-- <div class = "col-sm">
             <h1 class = "project-title-page">IxDS II: Trekko</h1>
         </div> -->
     <div class = "container-fluid">
         <div class = "wrap">
             <section class = "left-side">
-                <video class = "project-video" controls><source src = "images/IDS2 Mobile Service Design/IDS2_FINAL_video_480p.mov" type = "video/mp4"></video>
+                <video class = "project-video-vertical" controls><source src = "images/IDS2 Mobile Service Design/IDS2_FINAL_video_480p.mov" type = "video/mp4"></video>
             </section>
-            <section class = "right-side">
-                    <h2>Sample text </h2>
-                    <p>Sample text Sample textSample textSample textSample textSample textSample textSample textSample text</p>
-               
-            </section>
+            <div class = "right-side">
+                <p>Markel Food Group produces process machinery for various large-scale food production companies, such as Pepperidge Farms, who mass-produce baked goods. Our research identified a key problem in their client operations: the currently existing maintenance pipeline is quite slow, causing unnecessary machine downtime for clients.</p>
+                <p>This project involves the proposal of a high-fidelity native mobile application, which is targeted towards ameliorating this slow pipeline. The application aims to provide better support throughout the maintenance process of any Markel machine by helping clients troubleshoot issues on-site, providing analytics on machine performance, and assisting in setting up maintenance requests.</p>
+                <h2>Stakeholder Map</h2>
+                <img id = "stakeholdermap" src = "images/IDS2 Mobile Service Design/Stakeholder Map V3.jpg" src = "map of arrows between different stakeholders in Markel's operations">
+                <p>As a method of organizing various important actors in Markel’s operations, my teammates and I created a stakeholder map in hopes of being able to find opportunities for improvement in the connections between stakeholders. In particular, we decided to focus on the feedback loop between three stakeholder groups: Direct Consumers, Product Development, and Customer Relations.</p>
+                <p>We wanted our mobile application to allow better communication between these three groups in order to advance our value-flow: time and efficiency, in addition to streamlining the jobs-to-be-done for these groups. Using data from customers and the company would be crucial in achieving this.</p>
+                <h2>The Concept and Execution</h2>
+                <p>After consulting feedback from our peers, the idea that we decided to move forward with was a maintenance app to streamline the process of fixing and repairing faulty Markel equipment inside customer factories.</p>
+                <img id = "wirecut-cookie-photo" src = "images/IDS2 Mobile Service Design/Wirecut Cookie Machine.png" src = "prototype screen showing data about the Wirecut Cookie Machine">
+                <img id = "prism-photo" src = "images/IDS2 Mobile Service Design/PRISM Oven.png" src = "prototype screen showing data about the PRISM Oven">
+                <img id = "maintenance-photo" src = "images/IDS2 Mobile Service Design/maintenance.png" src = "prototype screen showing data about maintenance">
+                <p>We started with a home page with a summary of information and a Systems tab with information for each machine in the factory, as well as data (photo on the left). At the very top is a 3D-map view of the machine, and the user’s position with respect to the machine. We deemed this to be extremely helpful given that these machines are quite large in size, and if the user needed to find a specific section of the machine to troubleshoot, this map would assist them in finding said component.</p>
+                <p>We additionally provide a list of the core components that make up a machine (photo in the middle). To indicate whether a component has an existing issue, we highlight the component in red on the 3D view, and also attach a red blinking indicator next to the component’s icon.This micro-interaction is crucial in helping users identify issues. The component overview screen is similar to that of it’s machine counterpart, in that it too provides a 3D map of where it is with respect to the entire machine.</p>
+                <p>If the component requires attention, an insight module is displayed describing the current and future consequences of damage to the component. The troubleshoot button will also be displayed and will oscillate up and down to begin guiding users through the troubleshooting process.</p>
+                <p>Finally, we provide data analytics for each machine. As seen in the middle photo, we show the key performance metrics for this particular machine, with the horizontal line marking the threshold for normal performance. Data analytics are also provided, except in the form of key performance indicators specific to the component. Additional details will display depending on whether these metrics go above or below the threshold.</p>
+                <p>For the Troubleshooting Guide, we are relying on the advanced technology and sensors in industrial equipment that can monitor when machinery is faulty or may become faulty (see video). We wanted to present users with an overview with animations for what to do to fix a particular component of a machine, as well as allow them to use their camera and AR technology to scan and ensure what they’re doing is right.</p>
+                <p>In addition to the Troubleshooting Guide, we offer users a Maintenance Tab (photo on the right) to submit reports to Markel about what is going wrong with particular machinery. They can also monitor shipments and past reports. In the event that the user has attempted to troubleshoot a faulty component, but the system still detects an issue, the user can then file a maintenance report to have the component shipped and looked at by Markel personnel.</p>
+                <p>The majority of our prototype was designed on Figma, with the AR feature created in Unity. </p>
+                <h2>The Role of Data</h2>
+                <p>Our app allows Markel Food Group to collect both explicit and implicit forms of data. Specifically, metrics for each machine and component are easily organized within the app for users and Markel to monitor to ensure everything is running smoothly. There, the frequency and quantity of maintenance requests are also measured so Markel can understand which machines are consistently breaking and might need replacing, or to be engineered better.</p>
+                <p>Furthermore, for transparency and ease of use, each component also has a Problem History timeline so Markel can see how many times a machine has broken down or needed fixing. We might also consider measuring how many times the “Troubleshoot” button is selected and how long the user spends on the Troubleshoot guide to know if our instructions are clear.</p>
+                <h2>Reflection</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p>For more detail about the overall process: <a href = "https://docs.google.com/presentation/d/1G6Mdtuvn372rW8THOUxUCopFx3502dAFsWq6-kxg0Bc/edit?usp=sharing">Process Book</a></p>
+            </div>
         </div>
     </div>
 	</section>

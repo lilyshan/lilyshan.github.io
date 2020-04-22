@@ -239,7 +239,7 @@ header {
 .project-content{
 	position: relative;
 	margin-left: 12%;
-	width: 75%;
+	width: 60%;
 }
 
 .project-video{
@@ -253,17 +253,55 @@ header {
 	margin-top: 15px;
 }
 
+#trekko_eco_photo {
+	width: 600px;
+	height: 275px;
+}
+
 /* IxDS II Markel Page*/
 .right-side {
 	width: 60%;
 	height: 100%;
+	margin-top: 2%;
 }
 
 .left-side {
-	width: 40%;
+	width: 480px;
 	height: 100%;
 }
 
+.project-video-vertical{
+	margin-right: 0px;
+	margin-top: 1%;
+	padding: 0px;
+	margin-left:20%;
+	outline: none;
+}
+
+#stakeholdermap{
+	width: 800px;
+	height: 518px;
+}
+
+#wirecut-cookie-photo{
+	width: 213px;
+	height: 600px;
+	margin-bottom: 1%;
+}
+
+#prism-photo{
+	width: 238px;
+	height: 600px;
+	margin-bottom: 1%;
+	margin-left: 2%;
+}
+
+#maintenance-photo{
+	width: 276px;
+	height: 600px;
+	margin-bottom: 1%;
+	margin-left: 2%;
+}
 
 /* FOOTER */
 
