@@ -222,11 +222,27 @@ header {
 /*Slideshow*/
 .single-item{
 	margin-left: 2%;
+}
+
+.about-me-photos{
 	height: 565px;
 	width: 424px;
 }
 
 /* IxDS II Trekko Page*/
+.left-side-horiz-video{
+	width: 725px;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 0;
+}
+
+.right-side-horiz-video {
+	width: 30%;
+	height: 100%;
+	margin-top: 2%;
+	margin-left: 1%;
+}
 
 .project-title-page{
 	text-align: left;
@@ -249,18 +265,14 @@ header {
 	outline: none;
 }
 
-.note {
-	margin-top: 15px;
-}
-
 #trekko_eco_photo {
 	width: 600px;
 	height: 275px;
 }
 
 #wheelchair-storyboard{
-	width: 500px;
-	height: 386px;
+	width: 640px;
+	height: 495px;
 }
 
 /* IxDS II Markel Page*/
@@ -324,6 +336,31 @@ header {
 #button-photo{
 	width: 400px;
 	height: 283px;
+}
+
+#user-personas-photo{
+	width: 500px;
+	height: 178px;
+	margin-bottom: 2%;
+}
+
+/* IxDS I HCI Celebration Page*/
+
+.hci-prototype {
+	width: 600px;
+	height: 338px;
+}
+
+.hci-prototype-slideshow-sizing{
+	width: 600px;
+	height: 338px;
+	margin-left: 5%;
+	margin-top:1%;
+}
+
+#hci-iteration-1{
+	width: 600px;
+	height: 399px;
 }
 
 /* FOOTER */
