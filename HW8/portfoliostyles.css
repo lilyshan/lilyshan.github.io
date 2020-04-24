@@ -204,6 +204,15 @@ header {
 	line-height: 160%
 }
 
+@media only screen and (max-width: 480px){
+	.about-content{
+		font-family: "Open Sans", sans-serif;
+		float: none;
+		margin-left: 4%;
+		line-height: 160%
+	}
+}
+
 #linkedin-logo{
 	width: 40px;
 	height: 37px;
@@ -230,19 +239,6 @@ header {
 }
 
 /* IxDS II Trekko Page*/
-.left-side-horiz-video{
-	width: 725px;
-	height: 100%;
-	margin-left: 5%;
-	margin-right: 0;
-}
-
-.right-side-horiz-video {
-	width: 30%;
-	height: 100%;
-	margin-top: 2%;
-	margin-left: 1%;
-}
 
 .project-title-page{
 	text-align: left;
@@ -258,11 +254,20 @@ header {
 	width: 60%;
 }
 
+@media only screen and (max-width: 480px){
+	.project-content{
+		position: relative;
+		margin-left: 12%;
+		width: 100%;
+	}
+}
+
 .project-video{
 	margin-top: 2%;
 	padding: 0;
 	margin-left:12%;
 	outline: none;
+	margin-bottom: 2%;
 }
 
 #trekko_eco_photo {
@@ -380,13 +385,35 @@ header {
 	margin-left: 4%;
 	width: 30%;
 }
+
+@media only screen and (max-width: 480px){
+	.misc-caption{
+		margin-top: 2%;
+		margin-left: 4%;
+		width: 100%;
+	}
+}
+
 /* Indent for first photo*/
 .indent1{
 	margin-left: 11%;
 }
+
+@media only screen and (max-width: 480px){
+	.indent1{
+	margin-left: 0;
+	}
+}
+
 /* Indent for later photos*/
 .indent2{
 	margin-left: 2%;
+}
+
+@media only screen and (max-width: 480px){
+	.indent2{
+	margin-left: 0;
+	}
 }
 
 .fashion-poster{
