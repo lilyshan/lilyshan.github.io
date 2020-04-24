@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- CSS Link -->
-    <link href="portfoliostyles.css" rel="stylesheet" type="text/css">
+    <link href="assets/portfoliostyles.css" rel="stylesheet" type="text/css">
     <!-- Font Links -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     	<nav>
     		<ul>
 			     <li>
-					   <a href = "index.html"><img id = "homeButton" src = "images/lilylogo_transparent.png" alt = "LS initials"></a></li>
+					   <a href = "index.html"><img id = "homeButton" src = "assets/images/lilylogo_transparent.png" alt = "LS initials"></a></li>
 				    <li><a id = "yellow" class = "headerlink" href="projects.html">Projects</a></li>
 				    <li><a class = "headerlink" href="aboutme.html">About</a></li>
 			 </ul>
@@ -28,25 +28,22 @@
 
 	<section>
         <h1 class = "project-title-page">IxDS I - Atlantis Hub Transportation Display</h1>
-        <!-- <div class = "col-sm">
-            <h1 class = "project-title-page">IxDS II: Trekko</h1>
-        </div> -->
-    <div class = "container-fluid">
-        <div class = "wrap">
-            <section class = "left-side">
-                <video class = "project-video-vertical" controls><source src = "images/IDS1 Data Driven Display/AtlantisHub_final_480p.mov" type = "video/mp4"></video>
-            </section>
-            <section class = "right-side">
+        <div class = "container-fluid">
+            <div class = "wrap">
+                <section class = "left-side">
+                    <video class = "project-video-vertical" controls><source src = "assets/images/IDS1 Data Driven Display/AtlantisHub_final_480p.mov" type = "video/mp4"></video>
+                </section>
+                <section class = "right-side">
                     <p>In this project, my team and I were assigned to design a data-driven display of transportation routes from Atlantis Hub to other locations in the US, Canada, and San Juan Islands area using user personas and taking into account how we could potentially introduce the “all new” PTF pass to customers.</p>
-                    <img id = "user-personas-photo" src = "images/IDS1 Data Driven Display/user personas.png" src = "photo of user personas">
+                    <img id = "user-personas-photo" src = "assets/images/IDS1 Data Driven Display/user personas.png" src = "photo of user personas">
                     <p>PTF stands for “planes, trains, and ferries”, and we were originally given very little guidance as to what exactly the pass was – meaning that it was imperative for us as a group to create our own definition for what the PTF Pass meant for our transportation display.</p>
                     <h2>The Current State</h2>
                     <p>The synthetic data we were given regarding what transportation routes were occuring inside and outside of the San Juan Islands was complex and difficult to parse through, especially because some columns were not relevant at all to our design. Below is the current state model that we created in order to better organize the information – this model was inspired by ER diagrams used in database design. While we are not sure how much this mapping impacted the final iteration of our display, it was a good way for our team to better familiarize ourselves with the data and what the objectives of the user personas were. Thus, we could use this information to see how we could promote the PTF routes to the viewers of this display.</p>
-                    <img id = "current-state-photo" src = "images/IDS1 Data Driven Display/current state.png" src = "drawing of current state model for Atlantis Hub">
+                    <img id = "current-state-photo" src = "assets/images/IDS1 Data Driven Display/current state.png" src = "drawing of current state model for Atlantis Hub">
                     <h2>Parallel Prototyping</h2>
                     <p>After some concept mapping of the future and current state, as well as lo-fi sketching and deliberation as to how to best organize and visualize the information, my team and I decided to engage in parallel prototyping to get a wider breadth of ideas. Personally, for my design, I decided to go with a vertical display because a vertical display shortens the line length, making the information more readable and having more top-down hierarchy. I added a column that indicated PTF eligibility so that those with the PTF Pass would quickly be able to view their routes. I separated the destinations from the San Juan Islands area, out of islands area, and connections. The “Connections” section would solve the problem we had with previous iterations about how to fit different transferring connections from each destination. Furthermore, I filled the empty space at the bottom with a PTF pass ad to promote the use of PTF, and used a ticker running at the bottom to show weather information and other important alerts.</p>
-                    <img class = "atlantishub-photo" src = "images/IDS1 Data Driven Display/lily_paralleldesign.png" src = "vertical transportation display">
-                    <img class = "atlantishub-photo" src = "images/IDS1 Data Driven Display/Final Iteration -Home.png" src = "final iteration of vertical transportation display">
+                    <img class = "atlantishub-photo" src = "assets/images/IDS1 Data Driven Display/lily_paralleldesign.png" src = "vertical transportation display">
+                    <img class = "atlantishub-photo" src = "assets/images/IDS1 Data Driven Display/Final Iteration -Home.png" src = "final iteration of vertical transportation display">
                     <h2>The Final Concept</h2>
                     <p>After exploring different design options, we decided the design should emphasize readability for the general public and ended up pursuing my general design, with a color scheme inspired by one of my team members' prototype.</p>
                     <p>You can compare and contrast the final iteration of this project vs. the design I created when parallel prototyping above.</p>
@@ -55,21 +52,20 @@
                     <p>The display itself was created in Figma, with the animations done in Keynote.</p>
                     <h2>An Additional Challenge: A Physical Control</h2>
                     <p>Another aspect of our display we began considering was the addition of a control to enhance the interactivity of our prototype. We played with a variety of controls and features. One control we considered was for further information to display on the screen after a PTF user swipes their card. Another feature we considered was for a person’s itinerary to be highlighted after pressing or using a control. However, we felt that both of these options may lead to an over-cluttered display and may not be practical with multiple users standing at the screen in a crowded terminal. We finally settled on creating a two-arrow button control (mid-fi version below) that would allow users to toggle between connection locations that had more detailed information, such as the dock number, about the routes in these connections. After about 20 seconds, the display would return back to the home screen that displays the three main connection locations: Friday Harbor, Roche Harbor, and Yacht Haven.</p>
-                    <img id = "button-photo" src = "images/IDS1 Data Driven Display/PTFbutton.jpg" src = "mid-fi design of physical button that corresponds to the display">
+                    <img id = "button-photo" src = "assets/images/IDS1 Data Driven Display/PTFbutton.jpg" src = "mid-fi design of physical button that corresponds to the display">
                     <h2>Reflection</h2>
                     <p>Throughout this entire design process, my team and I struggled to define the parts of the project we were unsure of, and make these parts our own. As the project began, we felt overwhelmed with the amount of information we had to consider, as well as the lack of clarity on the PTF pass. However, after many different quick low fidelity iterations and brainstorming, as well as pursuing parallel design during the second iteration to explore a wider variety of representations, we were able to come up with a display that relied on many of the design cues commonly found in most transportation hub displays, while also injecting our own interpretation of the PTF pass and crafting an effective visualization of connecting routes. While we believe our team’s display adequately fulfilled the main objectives of the user personas, we wish we made a greater effort to constantly reflect on whether we were still satisfying the user personas’ needs at each iteration. Furthermore, if we were to further iterate on this project, we would give more thought on what specific value we could put into the PTF pass. In our current display, the value that we put into the PTF pass was that we listed the PTF eligible flights within the San Juan Islands first before any of the other routes. Additionally, we only listed seat availabilities for PTF eligible flights. However, our team could have potentially considered other ways to create value for the PTF pass beyond those aspects. For example, we could have made our two-arrow button control available to only PTF pass users. We could have also created the specific cost options for the PTF pass such as a weekly or monthly pass. Despite this fact, overall, our display is intuitive and easy to understand while also being aesthetically pleasing, which was the overarching goal of this project for us.</p>
                     <p>For more detail about the overall process: <a href = "https://drive.google.com/file/d/1dtFlv1hWvxbRK1lqf00Qnt53DWclVYyI/view?usp=sharing">Process Book</a></p>
-               
-            </section>
+                </section>
+            </div>
         </div>
-    </div>
 	</section>
 
 	<footer class = "center-align">
 			<p> &copy;2020 | Lily Shan | Carnegie Mellon University</p>
 	</footer>
 
-    <script src = "portfolio.js" type = "text/javascript"></script>
+    <script src = "assets/portfolio.js" type = "text/javascript"></script>
 
     <!-- Bootstrap JS links  -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
