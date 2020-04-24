@@ -49,8 +49,10 @@ header {
 }
 
 #homeButton{
-	width: 40px;
-	height: 82px;
+	max-width: 40px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 82px;*/
 }
 
 #homeButton:hover{
@@ -87,8 +89,10 @@ header {
 #vectorportrait{
 	float: right;
 	margin-top: 10px;
-	width: 600px;
-	height: 589px;
+	max-width: 600px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 589px;*/
 	margin-left: 50px;
 	z-index: 1;
 }
@@ -174,8 +178,10 @@ header {
 }
 
 .imagecover-sizing{
-	width: 284px;
-	height: 284px;
+	max-width: 284px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 284px;*/
 	border-style: solid;
 	border-color: grey;
 	border-width: 2px;
@@ -189,8 +195,10 @@ header {
 
 #waterlily{
 	float: right;
-	width: 25%;
-	height: 25%;
+	max-width: 354px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 25%;*/
 	margin-top: 10%;
 	margin-left: 10%;
 }
@@ -199,19 +207,10 @@ header {
 
 .about-content{
 	font-family: "Open Sans", sans-serif;
-	float: right;
 	margin-left: 4%;
 	line-height: 160%
 }
 
-@media only screen and (max-width: 480px){
-	.about-content{
-		font-family: "Open Sans", sans-serif;
-		float: none;
-		margin-left: 4%;
-		line-height: 160%
-	}
-}
 
 #linkedin-logo{
 	width: 40px;
@@ -251,15 +250,7 @@ header {
 .project-content{
 	position: relative;
 	margin-left: 12%;
-	width: 60%;
-}
-
-@media only screen and (max-width: 480px){
-	.project-content{
-		position: relative;
-		margin-left: 12%;
-		width: 100%;
-	}
+	width: 70%;
 }
 
 .project-video{
@@ -383,15 +374,7 @@ header {
 .misc-caption{
 	margin-top: 2%;
 	margin-left: 4%;
-	width: 30%;
-}
-
-@media only screen and (max-width: 480px){
-	.misc-caption{
-		margin-top: 2%;
-		margin-left: 4%;
-		width: 100%;
-	}
+	width: 100%;
 }
 
 /* Indent for first photo*/
@@ -399,22 +382,11 @@ header {
 	margin-left: 11%;
 }
 
-@media only screen and (max-width: 480px){
-	.indent1{
-	margin-left: 0;
-	}
-}
-
 /* Indent for later photos*/
 .indent2{
 	margin-left: 2%;
 }
 
-@media only screen and (max-width: 480px){
-	.indent2{
-	margin-left: 0;
-	}
-}
 
 .fashion-poster{
 	width: 300px;
