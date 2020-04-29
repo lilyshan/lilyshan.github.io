@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 /* GLOBAL */
+.load-transition {
+	animation: transitionIn 0.75s;
+}
+
 body{
 	font-family: "Open Sans", sans-serif;
 }
@@ -49,8 +53,10 @@ header {
 }
 
 #homeButton{
-	width: 40px;
-	height: 82px;
+	max-width: 40px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 82px;*/
 }
 
 #homeButton:hover{
@@ -75,6 +81,17 @@ header {
 	display: flex;
 }
 
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
 /* HOME PAGE */
 #hometagline{
 	font-size: 120px;
@@ -87,8 +104,10 @@ header {
 #vectorportrait{
 	float: right;
 	margin-top: 10px;
-	width: 600px;
-	height: 589px;
+	max-width: 600px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 589px;*/
 	margin-left: 50px;
 	z-index: 1;
 }
@@ -124,7 +143,7 @@ header {
 @keyframes "blink" {
   from, to {
     color: transparent;
-  }
+	}
   50% {
     color: black;
   }
@@ -174,11 +193,24 @@ header {
 }
 
 .imagecover-sizing{
-	width: 284px;
-	height: 284px;
+	max-width: 284px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 284px;*/
 	border-style: solid;
 	border-color: grey;
 	border-width: 2px;
+}
+
+
+#waterlily{
+	float: right;
+	max-width: 354px;
+	/*width: 100%;
+	height: auto;*/
+	/*height: 25%;*/
+	margin-top: 10%;
+	margin-left: 10%;
 }
 
 .project-title{
@@ -187,22 +219,15 @@ header {
 	font-size: 16px;
 }
 
-#waterlily{
-	float: right;
-	width: 25%;
-	height: 25%;
-	margin-top: 10%;
-	margin-left: 10%;
-}
-
 /* ABOUT ME PAGE */
 
 .about-content{
 	font-family: "Open Sans", sans-serif;
-	float: right;
 	margin-left: 4%;
-	line-height: 160%
+	line-height: 160%;
+	float: right;
 }
+
 
 #linkedin-logo{
 	width: 40px;
@@ -225,37 +250,26 @@ header {
 }
 
 .about-me-photos{
-	height: 565px;
-	width: 424px;
+	max-width: 424px;
+	width: 100%;
+	height: auto;
+	/*width: 424px;*/
 }
 
 /* IxDS II Trekko Page*/
-.left-side-horiz-video{
-	width: 725px;
-	height: 100%;
-	margin-left: 5%;
-	margin-right: 0;
-}
-
-.right-side-horiz-video {
-	width: 30%;
-	height: 100%;
-	margin-top: 2%;
-	margin-left: 1%;
-}
 
 .project-title-page{
 	text-align: left;
 	font-size: 50px;
 	padding: 0;
 	margin-left: 12%;
-	font-style: 
+	font-family: "Oswald", sans-serif;
 }
 
 .project-content{
 	position: relative;
 	margin-left: 12%;
-	width: 60%;
+	width: 70%;
 }
 
 .project-video{
@@ -263,16 +277,17 @@ header {
 	padding: 0;
 	margin-left:12%;
 	outline: none;
+	margin-bottom: 2%;
 }
 
 #trekko_eco_photo {
-	width: 600px;
-	height: 275px;
+	max-width: 600px;
+	/*height: 275px;*/
 }
 
 #wheelchair-storyboard{
-	width: 640px;
-	height: 495px;
+	max-width: 640px;
+	/*height: 495px;*/
 }
 
 /* IxDS II Markel Page*/
@@ -296,71 +311,73 @@ header {
 }
 
 #stakeholdermap{
-	width: 800px;
-	height: 518px;
+	max-width: 800px;
+	/*height: 518px;*/
 }
 
 #wirecut-cookie-photo{
-	width: 213px;
-	height: 600px;
+	max-width: 213px;
+	/*height: 600px;*/
 	margin-bottom: 1%;
 }
 
 #prism-photo{
-	width: 238px;
-	height: 600px;
+	max-width: 238px;
+	/*height: 600px;*/
 	margin-bottom: 1%;
 	margin-left: 2%;
 }
 
 #maintenance-photo{
-	width: 276px;
-	height: 600px;
+	max-width: 276px;
+	/*height: 600px;*/
 	margin-bottom: 1%;
 	margin-left: 2%;
 }
 
 /* IxDS I Atlantis Hub Page*/
 #current-state-photo{
-	width: 245px;
-	height: 300px;
+	max-width: 245px;
+	/*height: 300px;*/
 }
 
 .atlantishub-photo{
-	width: 338px;
-	height: 600px;
+	max-width: 338px;
+	/*height: 600px;*/
 	margin-bottom: 1%;
 	margin-left: 2%;
 }
 
 #button-photo{
-	width: 400px;
-	height: 283px;
+	max-width: 400px;
+	/*height: 283px;*/
 }
 
 #user-personas-photo{
-	width: 500px;
-	height: 178px;
+	max-width: 500px;
+	/*height: 178px;*/
 	margin-bottom: 2%;
 }
 
 /* IxDS I HCI Celebration Page*/
 
 .hci-prototype {
-	width: 600px;
-	height: 338px;
+	max-width: 600px;
+	/*height: 338px;*/
 }
 
 .hci-prototype-slideshow-sizing{
-	width: 600px;
-	height: 338px;
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	/*height: 338px;*/
 	margin-left: 5%;
 	margin-top:1%;
 }
 
 #hci-iteration-1{
-	width: 600px;
-	height: 399px;
+	max-width: 600px;
+	/*height: 399px;*/
 }
 
 /* Misc. Projects Page*/
@@ -369,8 +386,8 @@ header {
 }
 
 #night-beach-art{
-	width: 400px;
-	height: 528px;
+	max-width: 400px;
+	/*height: 528px;*/
 	margin-left: 11%;
 	margin-top: 2%;
 }
@@ -378,20 +395,23 @@ header {
 .misc-caption{
 	margin-top: 2%;
 	margin-left: 4%;
-	width: 30%;
+	width: 100%;
 }
+
 /* Indent for first photo*/
 .indent1{
 	margin-left: 11%;
 }
+
 /* Indent for later photos*/
 .indent2{
 	margin-left: 2%;
 }
 
+
 .fashion-poster{
-	width: 300px;
-	height: 478px;
+	max-width: 300px;
+	/*height: 478px;*/
 	margin-top: 2%;
 	margin-bottom: 2%;
 	border-style: solid;
@@ -400,20 +420,25 @@ header {
 }
 
 .gestalt-series{
-	width: 600px;
-	height: 388px;
+	max-width: 600px;
+	/*height: 388px;*/
 	border-style: solid;
 	border-color: grey;
 	border-width: 2px;
 }
 
 .gestalt-sizing{
-	width: 600px;
-	height: 388px;
+	max-width: 600px;
+	width:100%;
+	height: auto;
+	/*height: 388px;*/
 	margin-left: 10%;
 	margin-top: 2%;
 }
 
+.gestalt-margin-indent{
+	margin-left: 15%;
+}
 
 /* FOOTER */
 
