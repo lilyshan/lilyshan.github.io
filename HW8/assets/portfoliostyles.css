@@ -230,6 +230,7 @@ header {
 
 .learn-more {
 	background-color: #5C707E;
+	border-radius: 25px;
   	color: white;
   	font-size: 16px;
   	padding: 10px 20px;
@@ -284,7 +285,6 @@ header {
 
 .about-me-photos{
 	width: 424px;
-	/*width: 100%;*/
 	height: auto;
 	/*width: 424px;*/
 }
