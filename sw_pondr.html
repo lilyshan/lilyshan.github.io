@@ -15,7 +15,7 @@
   </head>
   
   <body>
-  	<header>
+  	<header class = "load-transition">
     	<nav>
     		<ul>
 			     <li>
@@ -31,19 +31,46 @@
     <div class = "load-transition container-fluid">
         <div class = "wrap">
             <section class = "left-side">
-                <video controls class = "project-video" controls><source src = "assets/images/Social Web Pondr/Pondr Demo Final.mov" type = "video/mp4"></video>
+                <video class = "project-video-vertical" controls><source src = "assets/images/Social Web Pondr/Pondr Demo_480p.mov" type = "video/mp4"></video>
             </section>
             <div class = "right-side">
-                
-                <p>For more detail about the overall process: <a href = "">Final Report</a></p>
+                <p>Pondr is a photo-sharing journaling app that aims to minimize opportunities of social comparison, foster a sense of positivity and community among close friends, and inspire each other through self-reflection content. According to an article by the Harvard Health Publishing, journaling has been associated with lower levels of anxiety and stress. By eliminating certain features that are prominent on many SNS platforms, such as “likes”,  Pondr emphasizes collaborative self-journaling to help improve self-esteem.</p>
+                <p>After doing additional research on the impact and implications of psychological distancing (the cognitive separation between one’s current and future self), we decided to pivot our design to focus more on the connections the users could build through the app, while also allowing for more objective self-reflection and community building. Psychological distancing not only creates a clearer self-image for the user, but it also positively impacts how one views themselves in the grand scope of their network. Thus, the beneficial implications of psychological distancing fit in perfectly with our other goal of reducing social comparison. Due to this pivot, we decided to focus on three main features of Pondr: making an entry, connecting through commenting, and the network display and interaction.</p>
+                <h2>Gathering Insight</h2>
+                <p>My team and I prepared a 14-question survey that included questions that measured social media usage as well as general feelings towards social media. Each question was given in the form of a Likert scale, where 1 represented the lowest value and 7 represented the highest. By setting up each of our questions this way, we were able to attain quantitative values to supplement our interview analysis. Furthermore, we also conducted user interviews that focused on qualitative questions that would provide us with more detailed insight on the higher-level survey questions we previously asked. We conducted interviews with 10 individuals with an assortment of backgrounds; although our ability to reach out to people was limited due to the stay-at-home orders triggered by the COVID-19 outbreak, we still aimed to interview as diverse of a group as possible. We were ultimately able to interview some college students, some high school students, people from different schools and geographical regions, and people with all levels of social media familiarity. Finally, based on these responses, we created an affinity diagram to summarize our findings and discover key themes.</p>
+                <img id = "pondr-affinity" src = "assets/images/Social Web Pondr/affinity diagram.png" src = "affinity diagram of research findings">
+                <h2>Lo-Fi Prototype</h2>
+                <p>Our lo-fi focused on the basic functionalities of our app – journaling. Users can mainly access their profile page, home page, explore page, and create posts. Using this prototype, we user-tested 5 people by taking them through a series of tasks. Based on their feedback we made corresponding changes that are reflected in our mid-fi prototype.</p>
+                <img id = "pondr-lofi" src = "assets/images/Social Web Pondr/lofi-screens.png" src = "lofi prototypes with an explore page, settings, home page, and publish entry page">
+                <h2>Mid-Fi Prototype</h2>
+                <p>Our mid-fi prototype iteration was motivated by our user testing of lofi prototype as well as our professors’ and classmates’ feedback. We received the following main points of feedback:</p>
+                <li class = "content-list">Are there features that allow users to report inappropriate content?</li>
+                <li class = "content-list">What are some other features that would differentiate it from Medium?</li>
+                <li class = "content-list">Go deep on designing a specific interaction or experience (rather than a set of features) and to collect rich, informative data about how users are responding to that specific interaction or experience</li>
+                <br>
+                <p>First, we wanted to narrow our scope and focus on delving deeper into fleshing out one specific interaction. We realize that on many social media platforms, comments can often be negative and detrimental to users’ mental health. Thus, to combat that, we designed an interaction where users are encouraged to leave positive comments on others’ journal entries. We included words of positive reinforcement when users posted positive comments (Figure 2.1). When users leave a possible negative comment detected by natural language processing, they would get a confirmation overlay to ask whether they want to post and encourage them to rethink their decision (Figure 2.2). If they post and in fact it is a negative comment, our app utilizes negative reinforcement to reduce that behavior (Figure 2.3). If they choose not to make that harmful comment, again our app uses positive reinforcement to foster positive interactions (Figure 2.4).</p>
+                <img id = "pondr-midfi" src = "assets/images/Social Web Pondr/midfi-screens.png" src = "midfi prototypes depicting what happens when the app detects positive vs. negative comments">
+                <h2>Final Protoype</h2>
+                <p>With our final hi-fi prototypes, we again rethought about the direction we are taking our app. After receiving feedback that commenting is not something that is specific to journaling and is not necessarily backed by much of our initial research, we decided to pivot our design to one that ties more closely to journaling, more impactful on social networks, and is more novel than monitoring comments.</p>
+                <p>Our final prototype focuses on three main interactions: making an entry, connecting through commenting, and interacting with your social network. Our different types of templates are meant to foster a sense of accomplishment by asking a series of higher level “Why” questions that push users to think about their experiences from a more objective and abstract point of view (Figure 3.2). Tags allow users to internalize the content of their entry and allow users to more easily make connections with other entries. We kept the anonymity feature from previous iterations as it encourages users to focus on the content, and not the authors when reading entries (Figure 3.3).</p>
+                <p>Driven by promoting linkage between entries instead of just leaving positive comments to foster a sense of community, we changed the commenting interaction to making a new connection. Our commenting flow fosters connections by encouraging users to reflect on their own entries before commenting, promotes commonalities between entries, and strengthens connections through content. Users have to choose an entry to connect to the entry they want to comment on (Figure 3.4). The act of reflecting on which entry to connect encourages users to think about the similarities between their entries and the author’s entry which fosters deeper connections within the network.</p>
+                <p>After making a connection, the user is able to see their entry network, allowing users to visualize connections between entries (Figure 3.5). Each connection is based off of a comment and its associated entry. Directionality of the arrows shows which entry was connected to the other. Degrees of Separation dictate the relative positioning of the user’s entry in relation to others. Red represents the user’s own entry, blue represents entries which the user already has a direct connection with, and gray entries denote ones the user does not have a direct connection with. Users can then click on any entry they are interested in, preview the entry, and view the specific entry (Figure 3.6). The entry network broadens users’ perspectives, pushes them to make new connections, and encourages users to see how they relate to others in their network.</p>
+                <img class = "pondr-hifi" src = "assets/images/Social Web Pondr/hifi-screens1.png" src = "">
+                <img class = "pondr-hifi" src = "assets/images/Social Web Pondr/hifi-screens2.png" src = "">
+                <h2>Reflection</h2>
+                <p>Ultimately, my team and I realized how important it was to narrow our concept with each iteration and how to take the feedback we received from our peers, professors, and interview/user testing participants into a playable, interactive app. Throughout working on this project, we pivoted our design multiple times, from focusing on decreasing social comparison with a journaling app, to emphasizing networks and connections through journaling. Each pivot brought us new insights as to how to make our app stand out against existing social media platforms, as well as how to better execute the research we had amassed into a final product.</p>
+                <p>Some next steps we would like to consider include making the comment network structure more robust and generally flushing out and implementing all of our proposed nuances that we did not get to include due to time. One potential feature that we would like to apply is a text analysis to help connect entries to each other, rather than solely basing them off the comments as it is now.</p>
+                <p>Finally, we would also like to include a tutorial for first time users to help them understand how the networks are connected. Some of the concepts of our app, like “degrees of separation” or common tags, may not be intuitive. Therefore, a tutorial that explains these elements may be useful in helping users make the most out of our app. It would also be interesting to explore different network structures. For example, if there was an app-generated “Connection Score” rather than “Degrees of Separation”, this could improve the accuracy of the users’ networks.</p> 
+
+                <p>For more detail about the overall process: <a href = "https://drive.google.com/file/d/1jTmsx4ApcZ6tv8G6QUHop9Fp6qonVJHc/view?usp=sharing">Final Report</a></p>
             </div>
         </div>
     </div>
 	</section>
 
 	<footer class = "center-align">
-			<p> &copy;2020 | Lily Shan | Carnegie Mellon University</p>
-	</footer>
+            <p> &copy;2020 | Lily Shan | Carnegie Mellon University | <a class = "footer-link-style" href = "https://drive.google.com/file/d/1ixsdrb1f8saIyiqDQ8EwkNQuwzOSwQTw/view?usp=sharing">Resume</a> </p>
+    </footer>
 
     <script src = "assets/portfolio.js" type = "text/javascript"></script>
 
