@@ -108,7 +108,7 @@ header {
 	float: right;
 	/*margin-top: 5px;*/
 	max-width: 485px;
-	width: auto%;
+	width: 100%;
 	height: auto;
 	margin-left: 10%;
 	/*z-index: 1;*/
