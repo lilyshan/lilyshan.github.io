@@ -541,6 +541,28 @@ header {
 	margin-left: 15%;
 }
 
+.book-series{
+	max-width: 850px;
+	width:100%;
+	height: auto;
+	/*height: 388px;*/
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+}
+
+.spain-sizing{
+	max-width: 850px;
+	width: 100%;
+	height: auto;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.spain-margin-indent{
+	margin-left: 15%;
+}
+
 /* FOOTER */
 
 footer {
