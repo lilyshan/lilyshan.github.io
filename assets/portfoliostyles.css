@@ -25,10 +25,6 @@ p{
 	font-size: 14px;
 }
 
-li{
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
-}
 
 table{
 	margin-bottom: 2%;
@@ -580,7 +576,10 @@ header {
 	margin-left: 15%;
 }
 
-
+.ordered-list{
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
 
 /* FOOTER */
 
