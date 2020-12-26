@@ -25,6 +25,14 @@ p{
 	font-size: 14px;
 }
 
+table{
+	margin-bottom: 2%;
+}
+
+th,td{
+	padding: 0 3% 1% 0;
+}
+
 header { 
 	font-family: "Oswald", sans-serif;
 	font-size: 22px;
@@ -432,6 +440,10 @@ header {
 .hci-prototype {
 	max-width: 600px;
 	/*height: 338px;*/
+}
+
+#hci-web-table{
+	margin-top: 2%;
 }
 
 .hci-prototype-slideshow-sizing{
