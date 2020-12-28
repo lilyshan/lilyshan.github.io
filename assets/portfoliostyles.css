@@ -503,7 +503,25 @@ header {
 	max-width: 700px;
 }
 
-#paper-bbbake-photos{
+#paper-bbbake-photo1{
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	margin-right: 1%;
+	position: relative;
+}
+
+#paper-bbbake-photo2{
+	max-width: 300px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	margin-right: 1%;
+	position: relative;
+}
+
+#paper-bbbake-photo3{
 	max-width: 300px;
 	width: 100%;
 	height: auto;
