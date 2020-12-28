@@ -525,7 +525,25 @@ header {
 	margin-left: 11%;
 }
 
-#digital-drawing{
+#digital-drawing-LA{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	/*height: 528px;*/
+	margin-left: 11%;
+	margin-top: 2%;
+}
+
+#digital-drawing-TA{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	/*height: 528px;*/
+	margin-left: 11%;
+	margin-top: 2%;
+}
+
+#digital-drawing-beach{
 	max-width: 400px;
 	width: 100%;
 	height: auto;
@@ -603,6 +621,15 @@ header {
 
 .spain-margin-indent{
 	margin-left: 15%;
+}
+
+#mayalin-poster{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	/*height: 528px;*/
+	margin-left: 11%;
+	margin-top: 2%;
 }
 
 .ordered-list{
