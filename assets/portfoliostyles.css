@@ -30,6 +30,12 @@ p{
 	font-size: 14px;
 }
 
+@media screen and (max-width: 600px) {
+  p{
+    font-size: 12px;
+  }
+}
+
 
 table{
 	margin-bottom: 2%;
@@ -44,6 +50,17 @@ td{
 	font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  th, td {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+ul{
+	padding:0;
+}
+
 header { 
 	font-family: "Oswald", sans-serif;
 	font-size: 22px;
@@ -56,11 +73,21 @@ header {
 	
 } 
 
+.wrap {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+#invisible{
+	color: white;
+
+}
+
 .pagetitle {
 	font-size: 72px;
-	margin-top: 2%;
-	margin-left: 2%;
-	margin-bottom:4%;
+	margin-top: 9%;
+	margin-left: 3%;
+	margin-bottom:2%;
 	/*float: left;
 	margin-top: 10%;
 	transform: rotate(-180deg);
@@ -73,14 +100,41 @@ header {
 	height: 100%;*/
 }
 
-.wrap {
-	flex-wrap: wrap;
-	display: flex;
+
+@media screen and (max-width: 600px) {
+  h1.pagetitle {
+    font-size: 20px;
+    margin-top: 20%;
+    visibility: hidden;
+  }
 }
 
-#invisible{
-	color: white;
+.project-title-page{
+	text-align: left;
+	font-size: 50px;
+	padding: 0;
+	margin-left: 10%;
+	margin-top: 8%;
+	position: relative;
+	font-family: "Oswald", sans-serif;
+}
 
+@media screen and (max-width: 600px) {
+  .project-title-page {
+    font-size: 30px;
+    margin-top: 25%;
+  }
+}
+
+.ordered-list{
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .ordered-list {
+    font-size: 12px;
+  }
 }
 
 /*Top Nav */
@@ -89,17 +143,19 @@ header {
 	overflow: hidden;
 	position: fixed;
 	display:block;
-	background-color: white;
+	/*background-color: white;*/
 	top: 0;
 	width: 100%;
 	z-index: 1;
 }
 
-
-/*.navbar .icon {
-  display: none;
+nav{
+	width: 100%;
+	padding: 0;
+	margin:0;
+	display:block;
 }
-*/
+
 .headerlink {
 	color: black;
 }
@@ -113,11 +169,17 @@ header {
 	color: #F5B12C;
 }
 
+@media screen and (max-width: 600px) {
+  header{
+    font-size: 18px;
+  }
+}
+
 #homeButton{
 	max-width: 40px;
 	margin-top:1%;
-	/*width: 100%;
-	height: auto;*/
+	width: 100%;
+	height: auto;
 	/*height: 82px;*/
 }
 
@@ -125,28 +187,25 @@ header {
 	text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  #homeButton{
+    max-width: 28px;
+    width:100%;
+    height: auto;
+    margin-left: 0;
+  }
+}
 
-/*@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}*/
+#projects-page-title{
+	margin-top: 9%;
+}
 
-/*@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media screen and (max-width: 600px) {
+  #projects-page-title{
+  	margin-top: 2%;
+  	visibility: hidden;
   }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}*/
+}
 
 /* Transition Animation */
 
@@ -166,31 +225,62 @@ header {
 }
 
 /* HOME PAGE */
+
+.home-intro{
+	width: 55%;
+	margin-top: 11%;
+}
+
 #hometagline{
-	font-size: 120px;
+	font-size: 110px;
 	color: black;
-	margin-top: 35%;
-	margin-left: 40px;
+	margin-top: 20%;
+	margin-left: 6%;
+	width: 90%;
 	/*z-index: 1;*/
+}
+
+@media screen and (max-width: 600px) {
+  #hometagline {
+    font-size: 72px;
+    margin-left: 11%;
+    margin-top: 25%;
+  }
 }
 
 #vectorportrait{
 	float: right;
 	/*margin-top: 5px;*/
 	/*max-width: 485px;*/
-	max-width: 70%;
+	max-width: 450px;
+	width:100%;
 	height: auto;
-	margin-left: 9%;
+	margin-left: 8%;
 	margin-top:8%;
 	object-fit: contain;
 	/*z-index: 1;*/
 }
 
+@media screen and (max-width: 1100px) {
+  #vectorportrait{
+    display:none;
+  }
+}
+
 #homepage-subtitle{
 	font-size: 18px;
-	margin-left: 40px;
+	margin-left: 6%;
 	margin-top: 5%;
+	width: 80%;
 }
+
+@media screen and (max-width: 600px) {
+  #homepage-subtitle {
+    font-size: 16px;
+    margin-left: 11%;
+  }
+}
+
 
 /*.rectangle {
   	height: 40px;
@@ -203,7 +293,7 @@ header {
 
 .blinking-cursor {
 	font-weight: lighter;
-  	font-size: 120px;
+  	font-size: 110px;
   	color: #2E3D48;
   	display: inline;
   	-webkit-animation: 1.5s blink step-end infinite;
@@ -211,6 +301,12 @@ header {
   	-ms-animation: 1.5s blink step-end infinite;
   	-o-animation: 1.5s blink step-end infinite;
   	animation: 1.5s blink step-end infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .blinking-cursor {
+    font-size: 50px;
+  }
 }
 
 #home-footer{
@@ -263,7 +359,7 @@ header {
   }
 }
 
-/* PROJECTS PAGE */
+/* PROJECTS */
 
 .image-wrap{
 	margin-right: 30px;
@@ -305,21 +401,22 @@ header {
 }
 
 .learn-more {
-	background-color: #5C707E;
+	background-color: #bab7b6;
 	border-radius: 25px;
   	padding: 10px 20px;
   	max-width: 180px;
 }
 
 .lm-button-style {
-	color: white;
+	color: black;
   	font-size: 16px;
   	text-decoration: none;
 }
 
 .lm-button-style:hover {
-	color: white;
+	color: black;
   	font-size: 16px;
+  	font-weight: bold;
   	text-decoration: none;
 }
 
@@ -367,40 +464,46 @@ header {
 /*Slideshow*/
 .single-item{
 	margin-left: 2%;
+	max-width: 424px;
+	width:100%;
+	height: auto;
 }
 
 .about-me-photos{
-	width: 424px;
+	max-width: 424px;
+	width:100%;
 	height: auto;
 	/*width: 424px;*/
 }
 
 /* IxDS II Trekko Page*/
 
-.project-title-page{
-	text-align: left;
-	font-size: 50px;
-	padding: 0;
-	margin-left: 12%;
-	margin-top: 2%;
-	position: relative;
-	font-family: "Oswald", sans-serif;
-}
-
 .project-content{
 	position: relative;
-	margin-left: 12%;
+	margin-left: 9%;
 	width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .project-content {
+    margin-left: 2%;
+  }
 }
 
 .project-video{
 	margin-top: 2%;
 	padding: 0;
-	margin-left:12%;
+	margin-left:9%;
 	outline: none;
 	margin-bottom: 2%;
 	max-width:100%;
 	height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .project-video {
+    margin-left: 2%;
+  }
 }
 
 #trekko_eco_photo {
@@ -437,9 +540,16 @@ header {
 	max-width:100%;
 	height: auto;
 	padding: 0px;
-	margin-left:11%;
+	margin-left:9%;
 	outline: none;
 }
+
+@media screen and (max-width: 600px) {
+  .project-video-vertical {
+    margin-left: 2%;
+  }
+}
+
 
 #stakeholdermap{
 	max-width: 800px;
@@ -843,7 +953,14 @@ header {
 }
 /* MISC PROJECTS*/
 .misc-project-title{
-	margin-left: 11%;
+	margin-left: 9%;
+}
+
+@media screen and (max-width: 600px) {
+  h2.misc-project-title {
+    font-size: 18px;
+    margin-left: 10%;
+  }
 }
 
 #digital-drawing-LA{
@@ -851,8 +968,14 @@ header {
 	width: 100%;
 	height: auto;
 	/*height: 528px;*/
-	margin-left: 11%;
+	margin-left: 9%;
 	margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  #digital-drawing-LA {
+    margin-left: 2%;
+  }
 }
 
 #digital-drawing-TA{
@@ -860,8 +983,14 @@ header {
 	width: 100%;
 	height: auto;
 	/*height: 528px;*/
-	margin-left: 11%;
+	margin-left: 9%;
 	margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  #digital-drawing-TA {
+    margin-left: 2%;
+  }
 }
 
 #digital-drawing-beach{
@@ -869,8 +998,14 @@ header {
 	width: 100%;
 	height: auto;
 	/*height: 528px;*/
-	margin-left: 11%;
+	margin-left: 9%;
 	margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  #digital-drawing-beach {
+    margin-left: 2%;
+  }
 }
 
 .misc-caption{
@@ -914,13 +1049,19 @@ header {
 	max-width: 600px;
 	width: 100%;
 	height: auto;
-	margin-left: 10%;
+	margin-left: 12%;
 	margin-top: 2%;
 }
 
-.gestalt-margin-indent{
-	margin-left: 15%;
+@media screen and (max-width: 600px) {
+  .gestalt-sizing {
+    margin-left: 2%;
+  }
 }
+
+/*.gestalt-margin-indent{
+	margin-left: 15%;
+}*/
 
 .book-series{
 	max-width: 850px;
@@ -936,25 +1077,28 @@ header {
 	max-width: 850px;
 	width: 100%;
 	height: auto;
-	margin-left: 10%;
+	margin-left: 12%;
 	margin-top: 2%;
 }
 
-.spain-margin-indent{
-	margin-left: 15%;
+@media screen and (max-width: 600px) {
+  .spain-sizing {
+    margin-left: 2%;
+  }
 }
 
 #mayalin-poster{
 	max-width: 400px;
 	width: 100%;
 	height: auto;
-	margin-left: 11%;
+	margin-left: 9%;
 	margin-top: 2%;
 }
 
-.ordered-list{
-	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
+@media screen and (max-width: 600px) {
+  #mayalin-poster {
+    margin-left: 2%;
+  }
 }
 
 /* FOOTER */
