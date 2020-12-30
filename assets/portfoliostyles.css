@@ -20,6 +20,11 @@ h3{
 	font-family: "Open Sans", sans-serif;
 }
 
+h4{
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+}
+
 p{
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
@@ -32,6 +37,11 @@ table{
 
 th,td{
 	padding: 0 0 3% 0;
+}
+
+td{
+	font-size:14px;
+	font-weight: bold;
 }
 
 header { 
@@ -542,6 +552,82 @@ header {
 	height: auto;
 	margin-left: 3%;
 	margin-right: 20%;
+}
+
+#woman1-icon{
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+}
+
+#man1-icon{
+	max-width: 120px;
+	width: 100%;
+	height: auto;
+}
+
+#woman2-icon{
+	max-width: 120px;
+	width: 100%;
+	height: auto;
+}
+
+#man2-icon{
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+}
+
+#reverse-assump-photo{
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+}
+
+#UFT2-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
+}
+
+#UFT3-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
+}
+
+#affinityUCRE-photo{
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+}
+
+#storyboard2-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 2%;
+	margin-right: 2%;
+}
+
+#storyboard4-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
+}
+
+#storyboard7-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+#storyboard9-photo{
+	max-width: 375px;
+	width: 100%;
+	height: auto;
 }
 
 /* MISC PROJECTS*/
