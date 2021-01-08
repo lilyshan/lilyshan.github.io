@@ -119,12 +119,45 @@ header {
 	font-family: "Oswald", sans-serif;
 }
 
+@media screen and (max-width: 1443px) {
+  .project-title-page {
+    font-size: 50px;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1123px) {
+  .project-title-page {
+    font-size: 50px;
+    margin-top: 12%;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .project-title-page {
+    font-size: 40px;
+    margin-top: 14%;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .project-title-page {
+    font-size: 40px;
+    margin-top: 18%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .project-title-page {
     font-size: 30px;
-    margin-top: 25%;
+    margin-top: 30%;
   }
 }
+
+/*
+
+
+}*/
 
 .ordered-list{
 	font-family: "Open Sans", sans-serif;
