@@ -247,7 +247,7 @@ nav{
 }
 
 /* Transition Animation */
-
+/*
 .load-transition {
 	animation: transitionIn 0.75s;
 }
@@ -261,7 +261,7 @@ nav{
 		opacity: 1;
 		transform: rotateX(0);
 	}
-}
+}*/
 
 /* HOME PAGE */
 
@@ -281,7 +281,7 @@ nav{
 
 @media screen and (max-width: 600px) {
   #hometagline {
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 11%;
     margin-top: 25%;
     width: 100%;
@@ -316,7 +316,7 @@ nav{
 
 @media screen and (max-width: 600px) {
   #homepage-subtitle {
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 11%;
     width: 100%;
   }
@@ -485,6 +485,7 @@ nav{
 	margin-left: 4%;
 	line-height: 160%;
 	float: right;
+	margin-top:2%;
 }
 
 
@@ -505,7 +506,8 @@ nav{
 
 /*Slideshow*/
 .single-item{
-	margin-left: 2%;
+	margin-left: 9%;
+	margin-top: 2%;
 	max-width: 424px;
 	width:100%;
 	height: auto;
