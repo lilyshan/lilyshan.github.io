@@ -210,12 +210,12 @@ nav{
 
 @media screen and (max-width: 600px) {
   header{
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
 #homeButton{
-	max-width: 40px;
+	max-width: 30px;
 	margin-top:1%;
 	width: 100%;
 	height: auto;
@@ -228,7 +228,7 @@ nav{
 
 @media screen and (max-width: 600px) {
   #homeButton{
-    max-width: 28px;
+    max-width: 20px;
     width:100%;
     height: auto;
     margin-left: 0;
