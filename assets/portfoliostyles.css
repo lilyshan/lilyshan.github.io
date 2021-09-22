@@ -7,13 +7,20 @@ body{
 }
 
 h1{
-	font-family: "Oswald", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 }
 
 h2{
 	font-family: "Open Sans", sans-serif;
-	font-size: 24px;
-	margin-top: 3%;
+	font-size: 36px;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  h2{
+    font-size: 24px;
+  }
 }
 
 h3{
@@ -28,6 +35,7 @@ h4{
 p{
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
+	line-height: 1.8;
 }
 
 @media screen and (max-width: 600px) {
@@ -36,24 +44,29 @@ p{
   }
 }
 
+@media screen and (min-width: 2000px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 
 table{
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 }
 
 th,td{
-	padding: 0 0 3% 0;
+	padding: 1% 2% 1% 2%;
+	border-bottom: 1px solid grey;
 }
 
 td{
 	font-size:14px;
-	font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
   th, td {
     font-size: 12px;
-    font-weight: bold;
   }
 }
 
@@ -62,16 +75,32 @@ ul{
 }
 
 header { 
-	font-family: "Oswald", sans-serif;
-	font-size: 22px;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 18px;
 	margin-top: 20px;
+	letter-spacing: 3px;
  }
+
+ @media screen and (max-width: 600px) {
+  header {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+ @media screen and (min-width: 2000px) {
+  header {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+}
 
  header li{
 	display: inline;
 	padding: 0 3% 0 2%;
 	
 } 
+
 
 .wrap {
 	flex-wrap: wrap;
@@ -106,7 +135,6 @@ header {
   }
 }
 
-
 @media screen and (max-width: 600px) {
   h1.pagetitle {
     font-size: 20px;
@@ -115,14 +143,29 @@ header {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  h1.pagetitle {
+    font-size: 90px;
+    margin-top: 2%;
+  }
+}
+
 .project-title-page{
 	text-align: left;
-	font-size: 50px;
+	font-size: 40px;
 	padding: 0;
 	margin-left: 10%;
 	margin-top: 8%;
 	position: relative;
-	font-family: "Oswald", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 2000px) {
+  .project-title-page {
+    font-size: 60px;
+    margin-top: 10%;
+  }
 }
 
 @media screen and (max-width: 1443px) {
@@ -168,6 +211,7 @@ header {
 .ordered-list{
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
+	line-height: 1.8;
 }
 
 @media screen and (max-width: 600px) {
@@ -200,19 +244,14 @@ nav{
 }
 
 .headerlink:hover {
-	color: #F5B12C;
-	text-decoration: none;
+	color:black;
+	text-decoration: overline;
 }
 
 #yellow.headerlink {
-	color: #F5B12C;
+	text-decoration: overline;
 }
 
-@media screen and (max-width: 600px) {
-  header{
-    font-size: 14px;
-  }
-}
 
 #homeButton{
 	max-width: 30px;
@@ -232,6 +271,14 @@ nav{
     width:100%;
     height: auto;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #homeButton{
+    max-width: 40px;
+    width:100%;
+    height: auto;
   }
 }
 
@@ -276,6 +323,7 @@ nav{
 	margin-top: 15%;
 	margin-left: 6%;
 	width: 90%;
+	font-weight: bold;
 	/*z-index: 1;*/
 }
 
@@ -285,6 +333,16 @@ nav{
     margin-left: 11%;
     margin-top: 25%;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #hometagline {
+    font-size: 150px;
+    margin-left: 6%;
+    margin-top: 5%;
+    width: 90%;
+    font-weight: bold;
   }
 }
 
@@ -307,11 +365,19 @@ nav{
   }
 }
 
+@media screen and (min-width: 2000px) {
+  #vectorportrait{
+    max-width: 600px;
+    margin-left:0%;
+  }
+}
+
 #homepage-subtitle{
-	font-size: 18px;
+	font-size: 16px;
 	margin-left: 6%;
 	margin-top: 5%;
 	width: 80%;
+	letter-spacing: 1px;
 }
 
 @media screen and (max-width: 600px) {
@@ -322,6 +388,13 @@ nav{
   }
 }
 
+@media screen and (min-width: 2000px) {
+  #homepage-subtitle {
+    font-size: 24px;
+    margin-left: 6%;
+    width: 80%;
+  }
+}
 
 /*.rectangle {
   	height: 40px;
@@ -423,7 +496,14 @@ nav{
 	border-width: 2px;*/
 }
 
-.image-overlay {
+@media screen and (min-width: 2000px) {
+  .imagecover-sizing {
+    max-width: 550px;
+	border-radius: 3%;
+  }
+}
+
+/*.image-overlay {
 	transition: .5s ease;
   	opacity: 0;
   	position: absolute;
@@ -436,7 +516,7 @@ nav{
 
 .img-container:hover .image-overlay {
   	opacity: 1;
-}
+}*/
 
 .img-container:hover .imagecover-sizing{
 	opacity: 0.5;
@@ -475,7 +555,29 @@ nav{
 .project-title{
 	text-align: center;
 	width: 284px;
-	font-size: 16px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+@media screen and (min-width: 2000px) {
+  .project-title {
+    text-align: center;
+	width: 550px;
+	font-size: 20px;
+	letter-spacing: 1px;
+  }
+}
+
+
+.summaryTitle{
+	font-weight: bold;
+	text-align:right;
+}
+
+.summaryDescription{
+	font-style: italic;
+	font-weight:400;
+	font-size: 14px;
 }
 
 /* ABOUT ME PAGE */
@@ -508,9 +610,15 @@ nav{
 .single-item{
 	margin-left: 9%;
 	margin-top: 2%;
-	max-width: 424px;
+	/*max-width: 424px;*/
 	width:100%;
 	height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .single-item {
+    margin-left: 1%;
+  }
 }
 
 .about-me-photos{
@@ -520,17 +628,32 @@ nav{
 	/*width: 424px;*/
 }
 
+@media screen and (max-width: 600px) {
+  .about-me-photos {
+    max-width: 350px;
+    height:auto;
+    position: relative;
+  }
+}
+
 /* IxDS II Trekko Page*/
 
 .project-content{
 	position: relative;
 	margin-left: 9%;
-	width: 70%;
+	width: 80%;
 }
 
 @media screen and (max-width: 600px) {
   .project-content {
     margin-left: 2%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .project-content {
+  	width: 70%;
+    margin-left: 9%;
   }
 }
 
@@ -579,7 +702,6 @@ nav{
 
 .project-video-vertical{
 	margin-right: 0px;
-	margin-top: 1%;
 	margin-bottom: 3%;
 	max-width:100%;
 	height: auto;
@@ -596,7 +718,7 @@ nav{
 
 
 #stakeholdermap{
-	max-width: 800px;
+	max-width: 850px;
 	width: 100%;
 	height: auto;
 	/*height: 518px;*/
@@ -725,6 +847,12 @@ nav{
 	height: auto;
 	margin-left: 10%;
 	margin-top:1%;
+}
+
+@media screen and (max-width: 600px) {
+  .bbbake-prototype-slideshow-sizing {
+    margin-left: 1%;
+  }
 }
 
 .bbbake-prototype{
