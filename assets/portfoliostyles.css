@@ -15,6 +15,7 @@ h2{
 	font-size: 36px;
 	margin-top: 4%;
 	margin-bottom: 2%;
+	font-weight: lighter;
 }
 
 @media screen and (max-width: 600px) {
@@ -476,9 +477,8 @@ nav{
 /* PROJECTS */
 
 .image-wrap{
-	margin-right: 30px;
-	margin-left:20px;
-	margin-bottom: 10px;
+	margin-left: 3%;
+	margin-bottom: 3%;
 }
 
 .img-container{
@@ -585,9 +585,9 @@ nav{
 .about-content{
 	font-family: "Open Sans", sans-serif;
 	margin-left: 4%;
-	line-height: 160%;
 	float: right;
-	margin-top:2%;
+	margin-top: 2%;
+	line-height: 1.8;
 }
 
 
@@ -641,12 +641,14 @@ nav{
 .project-content{
 	position: relative;
 	margin-left: 9%;
-	width: 80%;
+	width: 70%;
+	font-weight: normal;
 }
 
 @media screen and (max-width: 600px) {
   .project-content {
     margin-left: 2%;
+    width:80%;
   }
 }
 
@@ -1126,6 +1128,7 @@ nav{
 /* MISC PROJECTS*/
 .misc-project-title{
 	margin-left: 9%;
+	font-weight: lighter;
 }
 
 @media screen and (max-width: 600px) {
@@ -1184,6 +1187,7 @@ nav{
 	margin-top: 2%;
 	margin-left: 4%;
 	width: 100%;
+	font-weight: normal;
 }
 
 /* Indent for first photo*/
@@ -1273,15 +1277,45 @@ nav{
   }
 }
 
+#lotus-underwater{
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	margin-left: 9%;
+	margin-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  #lotus-underwater {
+    margin-left: 2%;
+  }
+}
+
+#typeface-poster{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	margin-left: 9%;
+	margin-top: 2%;
+	border: 1px solid grey;
+}
+
+@media screen and (max-width: 600px) {
+  #typeface-poster {
+    margin-left: 2%;
+  }
+}
+
 /* FOOTER */
 
 footer {
-	padding:5px;
-  	font-size: 14px;
+	padding: 1%;
+  	font-size: 10px;
   	color: black;
   	background-color: white;
   	text-align: left;
   	margin-top: 2%;
+  	font-weight: normal;
 }
 
 @media screen and (max-width: 600px) {
