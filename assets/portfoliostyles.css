@@ -1328,6 +1328,11 @@ footer.center-align{
 	text-align: center;
 }
 
+.footer{
+	font-size: 12px;
+  	color: black;
+}
+
 .footer-link-style {
 	text-decoration: none;
 	color: #F5B12C;
