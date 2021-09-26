@@ -31,6 +31,7 @@ h3{
 h4{
 	font-family: "Open Sans", sans-serif;
 	font-size: 22px;
+	margin-top: 4%;
 }
 
 p{
@@ -220,6 +221,70 @@ header {
 @media screen and (max-width: 600px) {
   .ordered-list {
     font-size: 12px;
+  }
+}
+
+.back-to-projects{
+	margin-left: 10%;
+	font-size: 14px;
+	color: grey;
+	font-family: "Open Sans", sans-serif;
+}
+
+.back-to-projects:hover{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .back-to-projects {
+    font-size: 9px;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+}
+
+.toc{
+	margin-left: 10%;
+	color: grey;
+}
+
+.toc-links{
+	font-size: 14px;
+	color: grey;
+	font-family: "Open Sans", sans-serif;
+}
+
+.toc-links:hover{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .toc {
+    font-size: 9px;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .toc-links {
+    font-size: 9px;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+}
+
+.quote{
+	font-size: 16px;
+	font-style: italic;
+	width: 89%;
+	line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .quote {
+    font-size: 14px;
   }
 }
 /*-------------------------------------------------------------------- */
@@ -646,7 +711,7 @@ nav{
 .project-video-vertical{
 	margin-right: 0px;
 	margin-bottom: 3%;
-	max-width:100%;
+	max-width:350px;
 	height: auto;
 	padding: 0px;
 	margin-left:9%;
@@ -655,7 +720,8 @@ nav{
 
 @media screen and (max-width: 600px) {
   .project-video-vertical {
-    margin-left: 2%;
+    margin-left: 0%;
+    max-width:300px;
   }
 }
 
@@ -720,7 +786,15 @@ nav{
 }
 
 .content-list{
+	margin-left: 2%;
+	line-height: 1.8;
 	font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .content-list{
+    font-size: 12px;
+  }
 }
 
 /*-------------------------------------------------------------------- */
@@ -1010,6 +1084,121 @@ nav{
 }
 
 /*-------------------------------------------------------------------- */
+/* BHCI SOLBRIDGE*/
+
+.project-video{
+	margin-top: 2%;
+	padding: 0;
+	margin-left:9%;
+	outline: none;
+	margin-bottom: 2%;
+	max-width:650px;
+	height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .project-video {
+    margin-left: 0%;
+    max-width:300px;
+  }
+}
+
+#solar-journey-photo{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	margin-top: 2%;
+}
+
+#solar-affinity-photo{
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+#solar-storyboardanalysis-photo{
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+.BHCI-storyboard-slideshow-sizing{
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	margin-left: 5%;
+	margin-top:1%;
+}
+
+.solar-storyboard{
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+}
+
+#bhci-lofi-photo{
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+#solar-midfihomepage-photo{
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+#solar-midfiquiz-photo{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+#bhci-midfidashboard-photo{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+#bhci-finalhomepage-photo{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+}
+
+.BHCI-final-slideshow-sizing{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	margin-left: 5%;
+	margin-top:1%;
+}
+
+.solar-final{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+
+#bhci-designcycle{
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+	margin-top:2%;
+}
+
+/*-------------------------------------------------------------------- */
 /* MISC PROJECTS*/
 .misc-project-title{
 	margin-left: 9%;
@@ -1200,12 +1389,6 @@ footer {
   	font-weight: normal;
 }
 
-@media screen and (max-width: 600px) {
-  footer.center-align {
-    font-size: 12px;
-  }
-}
-
 footer.center-align{
 	text-align: center;
 }
@@ -1215,7 +1398,13 @@ footer.center-align{
   	color: black;
 }
 
-.footer-link-style {
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+
+/*.footer-link-style {
 	text-decoration: none;
 	color: #F5B12C;
 }
@@ -1224,7 +1413,7 @@ footer.center-align{
 	text-decoration: underline;
 	color: #F5B12C;
 }
-
+*/
 /*-------------------------------------------------------------------- */
 /*-------------------------------------------------------------------- */
 /*-------------------------------------------------------------------- */
@@ -1251,22 +1440,6 @@ footer.center-align{
   .project-content {
   	width: 70%;
     margin-left: 9%;
-  }
-}
-
-.project-video{
-	margin-top: 2%;
-	padding: 0;
-	margin-left:9%;
-	outline: none;
-	margin-bottom: 2%;
-	max-width:100%;
-	height: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .project-video {
-    margin-left: 2%;
   }
 }
 
